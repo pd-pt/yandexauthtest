@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yandex oauth test</title>
+    <link rel="stylesheet" href="styles.css">
+       <script src="https://yastatic.net/s3/passport-sdk/autofill/v1/sdk-suggest-with-polyfills-latest.js"></script>
+
+</head>
+<body>
+	<script>
+		window.YaSendSuggestToken(
+'http://heroic-pony-beffeb.netlify.app',
+   {
+      flag: true
+   }
+	</script>
+    <div class="container">
+        <h1>Recieve token</h1>
+    </div>
+</body>
+</html>
