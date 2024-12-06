@@ -6,6 +6,10 @@
     <title>Yandex oauth test</title>
        <script src="https://yastatic.net/s3/passport-sdk/autofill/v1/sdk-suggest-token-with-polyfills-latest.js"></script>
 </head>
+    <div class="container">
+        <h1>Recieve token</h1>
+	<div id='token'></div>
+    </div>
 <body>
 	<script>
 		window.onload = function(){
@@ -18,9 +22,5 @@
 		document.getElementById('id').innerHTML = window.location.hash;
 		};
 	</script>
-    <div class="container">
-        <h1>Recieve token</h1>
-	<div id='token'></div>
-    </div>
 </body>
 </html>
