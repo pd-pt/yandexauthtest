@@ -13,18 +13,9 @@ app.get('/', (req, res) => {
 });
 
 // Handle the form submission
-app.post('/register', (req, res) => {
-    const { name, email, password } = req.body;
 
-    // Here, you can process the form data, like storing it in a database or sending an email.
-    console.log(`Received registration data: ${name}, ${email}, ${password}`);
-
-    // Redirect the user to a success or error page
-    res.redirect('/success'); // Replace with your desired redirect URL
-});
-
-app.get('/success', (req, res) => {
-    res.send('Registration successful!');
+app.get('/token', (req, res) => {
+    res.send('Registration successful!', JSON.stringify(req.requery));
   });
 
 app.listen(port, () => {
