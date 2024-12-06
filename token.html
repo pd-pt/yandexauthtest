@@ -8,15 +8,19 @@
 </head>
 <body>
 	<script>
+		window.onload = function(){
 		window.YaSendSuggestToken(
 'http://heroic-pony-beffeb.netlify.app',
    {
       flag: true
    }
-			); console.log(window.location);
+			);
+		document.getElementById('id').innerHTML = window.location.hash;
+		};
 	</script>
     <div class="container">
         <h1>Recieve token</h1>
+	<div id='token'></div>
     </div>
 </body>
 </html>
