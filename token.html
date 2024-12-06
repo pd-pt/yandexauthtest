@@ -9,6 +9,7 @@
     <div class="container">
         <h1>Recieve token</h1>
 	<div id='token'></div>
+	<div>Токен получили, закрываем окно, обновляем информацию об авторизации на странице где кнопка/виджет</div>
     </div>
 <body>
 	<script>
@@ -19,7 +20,7 @@
       flag: true
    }
 			);
-		document.getElementById('id').innerHTML = window.location.hash;
+		document.getElementById('token').innerHTML = window.location.hash;
 		};
 	</script>
 </body>
